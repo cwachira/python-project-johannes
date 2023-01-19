@@ -85,7 +85,6 @@ version_toml = "pyproject.toml:tool.poetry.version"
 # commit_version_number = true # required for version_source = "tag"
 # commit_message = "{version} [skip ci]" # skip triggering ci pipelines for version commits
 # tag_commit = true
-commit_parser="changelog.parse_commit"
 upload_to_pypi = false
 upload_to_release = false
 hvcs = "github" # gitlab is also supported (hvcs = host version control system)
