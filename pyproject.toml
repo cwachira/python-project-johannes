@@ -4,8 +4,8 @@ version = "0.3.0"
 description = ""
 authors = ["Johannes Schmidt <johannes.schmidt.vik@gmail.com>"]
 readme = "README.md"
-homepage = "https://github.com/johschmidt42/python-project-johannes"
-repository = "https://github.com/johschmidt42/python-project-johannes"
+homepage = "https://github.com/cwachira/python-project-johannes"
+repository = "https://github.com/cwachira/python-project-johannes"
 license = "MIT"
 
 [tool.poetry.dependencies]
@@ -81,10 +81,11 @@ exclude_lines = [
 branch = "main"
 version_variable = "src/example_app/__init__.py:__version__"
 version_toml = "pyproject.toml:tool.poetry.version"
-version_source = "tag"
-commit_version_number = true # required for version_source = "tag"
-commit_message = "{version} [skip ci]" # skip triggering ci pipelines for version commits
-tag_commit = true
+# version_source = "tag"
+# commit_version_number = true # required for version_source = "tag"
+# commit_message = "{version} [skip ci]" # skip triggering ci pipelines for version commits
+# tag_commit = true
+commit_parser="changelog.parse_commit"
 upload_to_pypi = false
 upload_to_release = false
 hvcs = "github" # gitlab is also supported (hvcs = host version control system)
